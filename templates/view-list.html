@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel='stylesheet' href="/static/styles.css"/>
+        <meta charset="UTF-8">
+        <title>View List!</title>
+    </head>
+    <body>
+        <h2>Todo List</h2>
+        {% for todo in todo_list %}
+            <div class="todo {{todo.color}}-border">
+                <h4>{{todo.title}}</h4>
+                <p>{{todo.description}}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>
